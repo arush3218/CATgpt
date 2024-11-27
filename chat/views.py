@@ -15,7 +15,7 @@ def response(request):
         message = request.POST.get('message','')
         completion = client.chat.completions.create(
             messages = [
-                {'role':'system','content':'You are a helpful assistant named cat.You should act like a friendly cat like saying purr or moew at end of osme of the sentences.'},
+                {'role':'system','content':'You are a helpful assistant named cat.You should act like a friendly cat like saying purr or meow at end of some of the sentences.'},
                 {'role':'user','content':message},
             
             ]
