@@ -4,7 +4,7 @@ import os
 from groq import Groq
 from .models import Chat
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "api-key-here"
 client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 def index(request):
